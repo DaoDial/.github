@@ -19,10 +19,35 @@
   <a href="https://x.com/daodialapp">
     <img src="https://img.shields.io/badge/Twitter-@daodialapp-1DA1F2?style=for-the-badge&logo=x&logoColor=white" alt="Twitter"/>
   </a>
+  <a href="https://github.com/DaoDial">
+    <img src="https://img.shields.io/badge/GitHub-DaoDial-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  </a>
+</p>
+
+<!-- Live Status Badges -->
+<p>
+  <img src="https://img.shields.io/website?url=https%3A%2F%2Fapi.daodial.com%2Fapi%2Fhealth&style=flat-square&label=API&up_message=operational&down_message=down&up_color=brightgreen&down_color=red" alt="API Status"/>
+  &nbsp;
+  <img src="https://img.shields.io/website?url=https%3A%2F%2Fwww.daodial.com&style=flat-square&label=Website&up_message=online&down_message=offline&up_color=brightgreen&down_color=red" alt="Website Status"/>
+  &nbsp;
+  <img src="https://img.shields.io/website?url=https%3A%2F%2Fweb.daodial.com&style=flat-square&label=Web%20App&up_message=online&down_message=offline&up_color=brightgreen&down_color=red" alt="Web App Status"/>
+  &nbsp;
+  <img src="https://img.shields.io/badge/iOS-Live_on_App_Store-brightgreen?style=flat-square&logo=apple&logoColor=white" alt="iOS Status"/>
+  &nbsp;
+  <img src="https://img.shields.io/badge/Encryption-E2EE_Signal_Protocol-blue?style=flat-square&logo=letsencrypt&logoColor=white" alt="Encryption"/>
 </p>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
+</div>
+
+<!-- Auto-updated by GitHub Actions -->
+<div align="center">
+<sub>
+
+<!-- LAST_UPDATED -->Last updated: February 08, 2026<!-- /LAST_UPDATED --> · <!-- DAYS_LIVE -->Platform live for **57 days**<!-- /DAYS_LIVE --> · <!-- API_STATUS -->API: **Operational**<!-- /API_STATUS --> · <!-- SITE_STATUS -->Website: **Online**<!-- /SITE_STATUS --> · <!-- APP_STATUS -->Web App: **Online**<!-- /APP_STATUS -->
+
+</sub>
 </div>
 
 ## About DaoDial
@@ -86,6 +111,29 @@ Traditional messaging apps collect your data. Existing Web3 solutions lack prope
    │  PostgreSQL │    │  Blockchain │    │   Services  │
    └─────────────┘    └─────────────┘    └─────────────┘
 ```
+
+---
+
+## Tech Stack
+
+<div align="center">
+<p>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
+  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React"/>
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js"/>
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js"/>
+  <img src="https://img.shields.io/badge/React_Native-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React Native"/>
+  <img src="https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white" alt="Expo"/>
+</p>
+<p>
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
+  <img src="https://img.shields.io/badge/Socket.io-010101?style=for-the-badge&logo=socket.io&logoColor=white" alt="Socket.io"/>
+  <img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS"/>
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
+  <img src="https://img.shields.io/badge/Solana-9945FF?style=for-the-badge&logo=solana&logoColor=white" alt="Solana"/>
+  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind"/>
+</p>
+</div>
 
 ---
 
@@ -160,7 +208,7 @@ Traditional messaging apps collect your data. Existing Web3 solutions lack prope
 
 **DaoDial** — Secure communication for the decentralized world
 
-[Website](https://www.daodial.com) · [Web App](https://web.daodial.com) · [Twitter](https://x.com/daodialapp)
+[Website](https://www.daodial.com) · [Web App](https://web.daodial.com) · [App Store](https://apps.apple.com/app/daodial-onchain-communication/id6757168898) · [Twitter](https://x.com/daodialapp)
 
 <sub>© 2026 DaoDial. All rights reserved.</sub>
 

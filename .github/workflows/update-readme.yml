@@ -1,0 +1,79 @@
+name: Update README Stats
+
+on:
+  schedule:
+    # Runs every day at 6 AM UTC (generates daily green squares)
+    - cron: '0 6 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT_TOKEN }}
+
+      - name: Update README with stats
+        run: |
+          # Get current date
+          DATE=$(date -u +"%B %d, %Y")
+          YEAR=$(date -u +"%Y")
+          MONTH=$(date -u +"%m")
+          DAY=$(date -u +"%d")
+          
+          # Calculate days since launch (Dec 13, 2025)
+          LAUNCH_DATE="2025-12-13"
+          TODAY=$(date -u +"%Y-%m-%d")
+          DAYS_SINCE=$(( ( $(date -d "$TODAY" +%s) - $(date -d "$LAUNCH_DATE" +%s) ) / 86400 ))
+          
+          # Update the stats section in README
+          cd profile
+          
+          # Replace the auto-updated stats line
+          sed -i "s|<!-- LAST_UPDATED -->.*<!-- /LAST_UPDATED -->|<!-- LAST_UPDATED -->Last updated: ${DATE}<!-- /LAST_UPDATED -->|g" README.md
+          sed -i "s|<!-- DAYS_LIVE -->.*<!-- /DAYS_LIVE -->|<!-- DAYS_LIVE -->Platform live for **${DAYS_SINCE} days**<!-- /DAYS_LIVE -->|g" README.md
+
+      - name: Check API Health
+        continue-on-error: true
+        run: |
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://api.daodial.com/api/health || echo "000")
+          cd profile
+          if [ "$STATUS" = "200" ]; then
+            sed -i "s|<!-- API_STATUS -->.*<!-- /API_STATUS -->|<!-- API_STATUS -->API: **Operational**<!-- /API_STATUS -->|g" README.md
+          else
+            sed -i "s|<!-- API_STATUS -->.*<!-- /API_STATUS -->|<!-- API_STATUS -->API: **Down**<!-- /API_STATUS -->|g" README.md
+          fi
+
+      - name: Check Website Health
+        continue-on-error: true
+        run: |
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://www.daodial.com || echo "000")
+          cd profile
+          if [ "$STATUS" = "200" ]; then
+            sed -i "s|<!-- SITE_STATUS -->.*<!-- /SITE_STATUS -->|<!-- SITE_STATUS -->Website: **Online**<!-- /SITE_STATUS -->|g" README.md
+          else
+            sed -i "s|<!-- SITE_STATUS -->.*<!-- /SITE_STATUS -->|<!-- SITE_STATUS -->Website: **Down**<!-- /SITE_STATUS -->|g" README.md
+          fi
+
+      - name: Check Web App Health
+        continue-on-error: true
+        run: |
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://web.daodial.com || echo "000")
+          cd profile
+          if [ "$STATUS" = "200" ]; then
+            sed -i "s|<!-- APP_STATUS -->.*<!-- /APP_STATUS -->|<!-- APP_STATUS -->Web App: **Online**<!-- /APP_STATUS -->|g" README.md
+          else
+            sed -i "s|<!-- APP_STATUS -->.*<!-- /APP_STATUS -->|<!-- APP_STATUS -->Web App: **Down**<!-- /APP_STATUS -->|g" README.md
+          fi
+
+      - name: Commit and push
+        run: |
+          git config user.name "DaoDial Bot"
+          git config user.email "bot@daodial.com"
+          git add -A
+          git diff --quiet && git diff --staged --quiet || (git commit -m "auto-update stats — $(date -u +%Y-%m-%d)" && git push)
