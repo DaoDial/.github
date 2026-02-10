@@ -8,19 +8,19 @@
 
 <p>
   <a href="https://www.daodial.com">
-    <img src="https://img.shields.io/badge/Website-daodial.com-000000?style=for-the-badge&logo=safari&logoColor=white" alt="Website"/>
+    <img src="https://img.shields.io/badge/daodial.com-000000?style=for-the-badge&logo=safari&logoColor=white" alt="Website"/>
   </a>
   <a href="https://web.daodial.com">
-    <img src="https://img.shields.io/badge/Launch_App-web.daodial.com-4F46E5?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Web App"/>
+    <img src="https://img.shields.io/badge/web.daodial.com-000000?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Web App"/>
   </a>
   <a href="https://apps.apple.com/app/daodial-onchain-communication/id6757168898">
-    <img src="https://img.shields.io/badge/App_Store-Download-0D96F6?style=for-the-badge&logo=app-store&logoColor=white" alt="App Store"/>
+    <img src="https://img.shields.io/badge/App_Store-000000?style=for-the-badge&logo=app-store&logoColor=white" alt="App Store"/>
   </a>
   <a href="https://x.com/daodialapp">
-    <img src="https://img.shields.io/badge/Twitter-@daodialapp-1DA1F2?style=for-the-badge&logo=x&logoColor=white" alt="Twitter"/>
+    <img src="https://img.shields.io/badge/@daodialapp-000000?style=for-the-badge&logo=x&logoColor=white" alt="Twitter"/>
   </a>
   <a href="https://github.com/DaoDial">
-    <img src="https://img.shields.io/badge/GitHub-DaoDial-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+    <img src="https://img.shields.io/badge/DaoDial-000000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
   </a>
 </p>
 
