@@ -4,7 +4,7 @@
 <img src="https://raw.githubusercontent.com/DaoDial/.github/main/profile/banner.png" alt="DaoDial Banner" width="100%"/>
 
 <!-- Animated Header -->
-<img src="https://capsule-render.vercel.app/api?type=transparent&height=80&text=Web3%20Communication%20Platform&fontSize=32&fontColor=333&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=transparent&height=80&text=Web3%20Social%20Media&fontSize=32&fontColor=ffffff&animation=fadeIn" width="100%"/>
 
 <p>
   <a href="https://www.daodial.com">
@@ -15,6 +15,9 @@
   </a>
   <a href="https://apps.apple.com/app/daodial-onchain-communication/id6757168898">
     <img src="https://img.shields.io/badge/App_Store-000000?style=for-the-badge&logo=app-store&logoColor=white" alt="App Store"/>
+  </a>
+  <a href="https://scanmybot.com">
+    <img src="https://img.shields.io/badge/ScanMyBot-000000?style=for-the-badge&logo=shield&logoColor=white" alt="ScanMyBot"/>
   </a>
   <a href="https://x.com/daodialapp">
     <img src="https://img.shields.io/badge/@daodialapp-000000?style=for-the-badge&logo=x&logoColor=white" alt="Twitter"/>
@@ -31,6 +34,8 @@
   <img src="https://img.shields.io/website?url=https%3A%2F%2Fwww.daodial.com&style=flat-square&label=Website&up_message=online&down_message=offline&up_color=brightgreen&down_color=red" alt="Website Status"/>
   &nbsp;
   <img src="https://img.shields.io/website?url=https%3A%2F%2Fweb.daodial.com&style=flat-square&label=Web%20App&up_message=online&down_message=offline&up_color=brightgreen&down_color=red" alt="Web App Status"/>
+  &nbsp;
+  <img src="https://img.shields.io/website?url=https%3A%2F%2Fscanmybot.com&style=flat-square&label=ScanMyBot&up_message=online&down_message=offline&up_color=brightgreen&down_color=red" alt="ScanMyBot Status"/>
   &nbsp;
   <img src="https://img.shields.io/badge/iOS-Live_on_App_Store-brightgreen?style=flat-square&logo=apple&logoColor=white" alt="iOS Status"/>
   &nbsp;
@@ -53,7 +58,7 @@
 
 ## About DaoDial
 
-DaoDial is a **privacy-first communication platform** built for the Web3 ecosystem. We enable secure, encrypted messaging with wallet-based authentication and token-gated access controls.
+DaoDial is a **privacy-first Web3 social media platform** built for the decentralized ecosystem. We enable secure, encrypted messaging with wallet-based authentication, token-gated access controls, and a growing marketplace of developer tools.
 
 <table>
 <tr>
@@ -61,17 +66,20 @@ DaoDial is a **privacy-first communication platform** built for the Web3 ecosyst
 
 ### What We Build
 
-- **End-to-End Encrypted Messaging** — Signal Protocol implementation ensuring only you and your recipient can read messages
-- **Token-Gated Communities** — Access controlled by NFT or token ownership, verified on-chain
-- **Wallet-First Identity** — No emails, no passwords. Your wallet is your identity
-- **Cross-Platform** — Native iOS, Android, and Web applications
+- **End-to-End Encrypted Messaging** using the Signal Protocol, ensuring only you and your recipient can read messages
+- **Token-Gated Communities** with access controlled by NFT or token ownership, verified on-chain
+- **Wallet-First Identity** with no emails, no passwords. Your wallet is your identity
+- **Cross-Platform Apps** including native iOS, Android, and Web applications
+- **Marketplace Tools** such as ScanMyBot for AI agent security scanning
 
 </td>
 <td width="50%" valign="top">
 
 ### Why DaoDial
 
-Traditional messaging apps collect your data. Existing Web3 solutions lack proper encryption. DaoDial bridges this gap — bringing enterprise-grade security to decentralized communication.
+Traditional messaging apps collect your data. Existing Web3 solutions lack proper encryption. DaoDial bridges this gap by bringing enterprise-grade security to decentralized communication.
+
+We are also building a marketplace of tools for developers and teams working with AI agents, smart contracts, and Web3 infrastructure.
 
 **Your messages. Your keys. Your privacy.**
 
@@ -81,36 +89,64 @@ Traditional messaging apps collect your data. Existing Web3 solutions lack prope
 
 ---
 
+## ScanMyBot
+
+<div align="center">
+
+<a href="https://scanmybot.com">
+  <img src="https://img.shields.io/badge/scanmybot.com-000000?style=for-the-badge&logo=shield&logoColor=white" alt="ScanMyBot"/>
+</a>
+
+</div>
+
+**ScanMyBot** is a security scanner built specifically for AI agents and Web3 projects. Paste a public GitHub repo URL, and get a full security health report in seconds. No signup required.
+
+The scanner runs **30+ automated checks** across five categories:
+
+| Category | What It Checks |
+|:---------|:---------------|
+| **Secrets Detection** | Hardcoded API keys, AWS credentials, OpenAI tokens, Ethereum private keys, committed .env files. Context-aware filtering reduces false positives. |
+| **Dependency Security** | Vulnerable packages, outdated versions, known CVEs. Scans every package.json across your entire repo tree. |
+| **AI Agent Safety** | Full OWASP LLM Top 10 coverage including prompt injection, insecure output handling, training data poisoning, model DoS, and excessive agency. |
+| **Blockchain Security** | Smart contract reentrancy, unlimited token approvals, oracle manipulation, flash loan protection, tx.origin misuse, and MEV risk analysis. |
+| **Code Quality** | Configuration validation, .gitignore checks, environment variable handling, test coverage, and documentation presence. |
+
+Each scan produces a **0 to 10 health score** with weighted categories: Secrets Management (35%), Dependencies (20%), Configuration (20%), AI Safety (15%), and Code Quality (10%). Issues are ranked by severity with actionable fix recommendations.
+
+ScanMyBot is the first app in the DaoDial Marketplace, available at [scanmybot.com](https://scanmybot.com) and integrated into the DaoDial web and mobile apps.
+
+---
+
 ## Platform Architecture
 
 ```
-                              ┌──────────────────────────────────────┐
-                              │           DaoDial Platform           │
-                              └──────────────────────────────────────┘
-                                              │
-              ┌───────────────────────────────┼───────────────────────────────┐
-              │                               │                               │
-              ▼                               ▼                               ▼
-     ┌─────────────────┐           ┌─────────────────┐           ┌─────────────────┐
-     │   Mobile Apps   │           │    Web Client   │           │  Landing Page   │
-     │   iOS/Android   │           │   Next.js PWA   │           │   Marketing     │
-     └────────┬────────┘           └────────┬────────┘           └─────────────────┘
-              │                               │
-              └───────────────┬───────────────┘
-                              │
-                              ▼
-                    ┌─────────────────┐
-                    │   Backend API   │
-                    │   Node.js/TS    │
-                    └────────┬────────┘
-                              │
-          ┌───────────────────┼───────────────────┐
-          │                   │                   │
-          ▼                   ▼                   ▼
-   ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
-   │  Database   │    │   Solana    │    │    Push     │
-   │  PostgreSQL │    │  Blockchain │    │   Services  │
-   └─────────────┘    └─────────────┘    └─────────────┘
+                        ┌──────────────────────────────────────┐
+                        │           DaoDial Platform           │
+                        └──────────────────────────────────────┘
+                                            │
+        ┌──────────────────┬────────────────┼────────────────┬──────────────────┐
+        │                  │                │                │                  │
+        ▼                  ▼                ▼                ▼                  ▼
+┌───────────────┐  ┌───────────────┐  ┌───────────┐  ┌──────────────┐  ┌───────────────┐
+│  Mobile Apps  │  │  Web Client   │  │  Landing  │  │  Marketplace │  │   ScanMyBot   │
+│  iOS/Android  │  │  Next.js PWA  │  │  Page     │  │  Apps        │  │   Scanner     │
+└───────┬───────┘  └───────┬───────┘  └───────────┘  └──────┬───────┘  └───────┬───────┘
+        │                  │                                 │                  │
+        └─────────┬────────┘                                 └────────┬─────────┘
+                  │                                                   │
+                  ▼                                                   ▼
+        ┌─────────────────┐                              ┌─────────────────────┐
+        │   Backend API   │                              │   Scanner Service   │
+        │   Node.js/TS    │                              │   Security Checks   │
+        └────────┬────────┘                              └─────────────────────┘
+                 │
+     ┌───────────┼───────────┐
+     │           │           │
+     ▼           ▼           ▼
+┌──────────┐ ┌──────────┐ ┌──────────┐
+│ Database │ │  Solana   │ │   Push   │
+│ Postgres │ │  Chain    │ │ Services │
+└──────────┘ └──────────┘ └──────────┘
 ```
 
 ---
@@ -134,6 +170,13 @@ Traditional messaging apps collect your data. Existing Web3 solutions lack prope
   <img src="https://img.shields.io/badge/Solana-9945FF?style=for-the-badge&logo=solana&logoColor=white" alt="Solana"/>
   <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind"/>
 </p>
+<p>
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" alt="Redis"/>
+  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase"/>
+  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions"/>
+  <img src="https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white" alt="Prisma"/>
+  <img src="https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Cloudflare"/>
+</p>
 </div>
 
 ---
@@ -142,10 +185,22 @@ Traditional messaging apps collect your data. Existing Web3 solutions lack prope
 
 | Repository | Description | Stack |
 |:-----------|:------------|:------|
-| **api** | Backend services, real-time messaging, authentication | Node.js, TypeScript, Socket.io, PostgreSQL |
+| **api** | Backend services, real-time messaging, authentication, scanner engine | Node.js, TypeScript, Socket.io, PostgreSQL |
 | **web** | Web application with full messaging capabilities | Next.js, React, TypeScript |
 | **mobile** | Native mobile apps for iOS and Android | React Native, Expo |
 | **landing** | Marketing website and documentation | Next.js, Tailwind CSS |
+| **scanmybot** | AI agent security scanner landing and web app | Next.js, Tailwind CSS |
+
+---
+
+## Marketplace
+
+The DaoDial Marketplace is a collection of tools built for developers and teams working with AI agents, smart contracts, and Web3 infrastructure. Available on both web and mobile.
+
+| App | Description | Status |
+|:----|:------------|:------:|
+| **ScanMyBot** | Security scanner for AI agent GitHub repos. 30+ checks across secrets, dependencies, AI safety, blockchain, and code quality. | Live |
+| **ScanMyCoin** | Token analysis tool for scanning coins in-app. Detects bundling, sniper wallets, liquidity locks, and holder distribution. | Coming Soon |
 
 ---
 
@@ -156,20 +211,20 @@ Traditional messaging apps collect your data. Existing Web3 solutions lack prope
 <td width="50%">
 
 ### Cloud Services
-- **Compute** — AWS ECS Fargate (containerized)
-- **Database** — Amazon RDS PostgreSQL
-- **Storage** — Amazon S3
-- **CDN** — CloudFront
-- **Frontend Hosting** — AWS Amplify
+- **Compute** using AWS ECS Fargate (containerized)
+- **Database** using Amazon RDS PostgreSQL
+- **Storage** using Amazon S3
+- **CDN** using CloudFront
+- **Frontend Hosting** using AWS Amplify
 
 </td>
 <td width="50%">
 
 ### DevOps
-- **CI/CD** — GitHub Actions
-- **Container Registry** — Amazon ECR
-- **Monitoring** — CloudWatch
-- **Mobile Builds** — Expo EAS
+- **CI/CD** using GitHub Actions
+- **Container Registry** using Amazon ECR
+- **Monitoring** using CloudWatch
+- **Mobile Builds** using Expo EAS
 
 </td>
 </tr>
@@ -195,9 +250,10 @@ Traditional messaging apps collect your data. Existing Web3 solutions lack prope
 
 | Feature | Status |
 |:--------|:------:|
-| **P2P Payments** — Venmo-style crypto transfers in chat | In Development |
-| **Group Payments** — Split bills with token holders | Planned |
-| **Payment Requests** — Request funds from contacts | Planned |
+| **P2P Payments** in chat, Venmo-style crypto transfers | In Development |
+| **Group Payments** to split bills with token holders | Planned |
+| **Payment Requests** to request funds from contacts | Planned |
+| **ScanMyCoin** for in-app token analysis and bundling detection | Planned |
 
 </div>
 
@@ -207,10 +263,10 @@ Traditional messaging apps collect your data. Existing Web3 solutions lack prope
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
 
-**DaoDial** — Secure communication for the decentralized world
+**DaoDial** / Secure social media for the decentralized world
 
-[Website](https://www.daodial.com) · [Web App](https://web.daodial.com) · [App Store](https://apps.apple.com/app/daodial-onchain-communication/id6757168898) · [Twitter](https://x.com/daodialapp)
+[Website](https://www.daodial.com) · [Web App](https://web.daodial.com) · [ScanMyBot](https://scanmybot.com) · [App Store](https://apps.apple.com/app/daodial-onchain-communication/id6757168898) · [Twitter](https://x.com/daodialapp)
 
-<sub>© 2026 DaoDial. All rights reserved.</sub>
+<sub>2026 DaoDial. All rights reserved.</sub>
 
 </div>
