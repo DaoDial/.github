@@ -50,10 +50,10 @@
 <div align="center">
 <sub>
 
-<!-- LAST_UPDATED -->Last updated: August 29, 2026<!-- /LAST_UPDATED --> · <!-- DAYS_LIVE -->Platform live for **259 days**<!-- /DAYS_LIVE --> · <!-- API_STATUS -->API: **Down**<!-- /API_STATUS --> · <!-- SITE_STATUS -->Website: **Down**<!-- /SITE_STATUS --> · <!-- APP_STATUS -->Web App: **Down**<!-- /APP_STATUS -->
+<!-- LAST_UPDATED -->Last updated: August 30, 2026<!-- /LAST_UPDATED --> · <!-- DAYS_LIVE -->Platform live for **260 days**<!-- /DAYS_LIVE --> · <!-- API_STATUS -->API: **Down**<!-- /API_STATUS --> · <!-- SITE_STATUS -->Website: **Down**<!-- /SITE_STATUS --> · <!-- APP_STATUS -->Web App: **Down**<!-- /APP_STATUS -->
 
 </sub>
-<!-- LAST_CHECK -->2026-08-29T12:21:42Z<!-- /LAST_CHECK -->
+<!-- LAST_CHECK -->2026-08-30T11:20:30Z<!-- /LAST_CHECK -->
 </div>
 
 ## About DaoDial
